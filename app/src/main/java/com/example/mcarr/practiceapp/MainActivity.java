@@ -59,12 +59,6 @@ public class MainActivity extends AppCompatActivity {
                 params.put("city", cityName);
                 return params;
             }
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("Content-Type", "application/x-www-form-urlencoded");
-                return params;
-            }
         };
         queue.add(sr);
     }
