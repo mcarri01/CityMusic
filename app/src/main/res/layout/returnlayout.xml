@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1"
-    android:tag="departWindow">
+    android:tag="returnWindow">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Date of Departure"
-        android:id="@+id/textView6"
+        android:text="Date of Return"
+        android:id="@+id/textView9"
         android:layout_gravity="center_horizontal" />
 
     <DatePicker
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/departureDates"
+        android:id="@+id/returnDates"
         android:layout_gravity="center_horizontal" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set Return Date"
-        android:id="@+id/button3"
-        android:layout_gravity="right"
-        android:onClick="checkReturn"/>
+        android:text="Set Departure Date"
+        android:id="@+id/button4"
+        android:layout_alignEnd="@+id/submit"
+        android:onClick="checkDepart"/>
 
 </LinearLayout>
